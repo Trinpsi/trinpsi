@@ -8,17 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .bg-trinpsi-dark { background-color: #002B49; } /* Azul Marinho da Logo */
-        .text-trinpsi-cyan { color: #00A99D; } /* Turquesa da Logo */
+        .bg-trinpsi-dark { background-color: #002B49; }
+        .text-trinpsi-cyan { color: #00A99D; }
         .bg-trinpsi-cyan { background-color: #00A99D; }
-        .bg-trinpsi-cyan-light { background-color: #E6F6F5; } /* Fundo de seção sutil */
-        
-        /* Ajuste para o banner com overlay escuro */
+        .bg-trinpsi-cyan-light { background-color: #E6F6F5; }
         .hero-banner {
             background-image: linear-gradient(to right, rgba(0, 43, 73, 0.9), rgba(0, 43, 73, 0.2)), 
                               url('https://images.unsplash.com/photo-1551836022-b5b3bb6c9b39?q=80&w=2000&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
+            background-size: cover; background-position: center;
         }
     </style>
 </head>
@@ -27,9 +24,7 @@
     <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center">
-                <div class="font-bold text-2xl bg-trinpsi-dark text-white px-3 py-1 rounded-sm flex items-center space-x-1">
-                    <span>TRINPSI</span>
-                </div>
+                <img src="logo.jpg" alt="Trinpsi Logo" class="h-14 w-auto">
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
                 <a href="#inicio" class="text-trinpsi-cyan hover:text-trinpsi-dark transition">Início</a>
@@ -43,13 +38,10 @@
     <section id="inicio" class="hero-banner py-20 lg:py-40 text-white relative">
         <div class="container mx-auto px-6 lg:px-12 relative z-10">
             <div class="max-w-2xl">
-                <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-6">CUIDE DO SEU BEM-ESTAR,<br>AQUI E AGORA.</h1>
-                <p class="text-xl opacity-90 mb-10">Um benefício exclusivo para você e sua empresa.</p>
+                <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-6 uppercase">Cuide do seu bem-estar,<br>aqui e agora.</h1>
+                <p class="text-xl opacity-90 mb-10 font-light">Um benefício exclusivo para você e sua empresa.</p>
                 <a href="https://wa.me/5514991667595" target="_blank" class="bg-trinpsi-cyan text-white px-8 py-3 rounded-full font-semibold text-base hover:scale-105 transition-all shadow-lg">AGENDAR SESSÃO</a>
             </div>
-        </div>
-        <div class="absolute top-10 right-10 opacity-10 hidden lg:block">
-            <svg class="w-48 h-48 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path></svg>
         </div>
     </section>
 
@@ -58,79 +50,64 @@
             <h2 class="text-3xl font-bold text-trinpsi-dark mb-16">Como Funciona</h2>
             <div class="grid md:grid-cols-3 gap-12 text-left">
                 <div class="bg-trinpsi-cyan-light p-8 rounded-xl shadow-sm border border-gray-100 relative">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-trinpsi-cyan text-xl absolute -top-6 left-8 shadow-md">1</div>
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center font-bold text-trinpsi-cyan absolute -top-5 left-8 shadow-md border border-gray-100">1</div>
                     <img src="https://img.icons8.com/dotty/80/00A99D/building.png" class="mb-6 h-16 w-16">
                     <h3 class="font-bold text-xl text-trinpsi-dark mb-3">A Parceria</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Sua empresa disponibiliza a Trinpsi como um convênio de bem-estar. O RH te informa sobre o acesso.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Sua empresa disponibiliza a Trinpsi como um convênio de bem-estar. Sem custos diretos para o RH.</p>
                 </div>
                 <div class="bg-trinpsi-cyan-light p-8 rounded-xl shadow-sm border border-gray-100 relative">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-trinpsi-cyan text-xl absolute -top-6 left-8 shadow-md">2</div>
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center font-bold text-trinpsi-cyan absolute -top-5 left-8 shadow-md border border-gray-100">2</div>
                     <img src="https://img.icons8.com/dotty/80/00A99D/user.png" class="mb-6 h-16 w-16">
-                    <h3 class="font-bold text-xl text-trinpsi-dark mb-3">O Colaborador</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Você acessa nossa vitrine e entra em contato via WhatsApp para agendar sua primeira sessão com sigilo.</p>
+                    <h3 class="font-bold text-xl text-trinpsi-dark mb-3">Sua Escolha</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Você acessa nossa vitrine, escolhe o profissional ideal e entra em contato via WhatsApp com total sigilo.</p>
                 </div>
                 <div class="bg-trinpsi-cyan-light p-8 rounded-xl shadow-sm border border-gray-100 relative">
-                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-trinpsi-cyan text-xl absolute -top-6 left-8 shadow-md">3</div>
+                    <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center font-bold text-trinpsi-cyan absolute -top-5 left-8 shadow-md border border-gray-100">3</div>
                     <img src="https://img.icons8.com/dotty/80/00A99D/consultation.png" class="mb-6 h-16 w-16">
                     <h3 class="font-bold text-xl text-trinpsi-dark mb-3">Atendimento</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">Realize suas sessões de psicoterapia focada em resultados. A empresa não recebe nenhuma informação sobre o seu atendimento.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Realize suas sessões de psicoterapia ética (TCC). A empresa não recebe nenhuma informação sobre o seu atendimento.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="atendimento" class="py-20 bg-gray-50 relative">
-        <div class="absolute top-10 right-10 opacity-10 hidden lg:block">
-            <svg class="w-48 h-48 text-trinpsi-cyan" fill="currentColor" viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path></svg>
-        </div>
-        <div class="container mx-auto px-6 lg:px-12 text-center relative z-10">
+    <section id="atendimento" class="py-20 bg-gray-50 relative text-center">
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
             <h2 class="text-3xl font-bold text-trinpsi-dark mb-4 uppercase tracking-wide">Agende sua Sessão</h2>
-            <p class="text-gray-700 mb-16 text-lg">Idealizadora do Projeto Trinpsi e Psicóloga Parceira</p>
+            <p class="text-gray-700 mb-16 text-lg uppercase tracking-widest font-light">Idealizadora do Projeto e Psicóloga Parceira</p>
             
             <div class="flex justify-center">
-                
                 <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden group max-w-sm text-left">
-                    <img src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?q=80&w=400&h=400&auto=format&fit=crop" class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <img src="foto-bruna.png" alt="Dra. Bruna Cruz" class="w-full h-80 object-cover object-top transition-transform duration-300 group-hover:scale-105">
                     <div class="p-6">
                         <h4 class="font-bold text-xl text-trinpsi-dark mb-1">Bruna Cruz</h4>
-                        <p class="text-xs text-gray-500 mb-3">CRP (Seu número)</p>
+                        <p class="text-xs text-gray-500 mb-3">CRP 06/159744</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="bg-gray-100 text-gray-600 text-[11px] px-3 py-1 rounded-full">Psicologia Clínica</span>
                             <span class="bg-teal-50 text-trinpsi-cyan text-[11px] px-3 py-1 rounded-full font-bold uppercase">TCC</span>
                         </div>
-                        <a href="https://wa.me/5514991667595" target="_blank" class="block text-center bg-trinpsi-cyan text-white py-2.5 rounded-lg font-bold text-sm hover:scale-105 transition shadow-sm">VER PERFIL E AGENDAR VIA WHATSAPP</a>
+                        <a href="https://wa.me/5514991667595" target="_blank" class="block text-center bg-trinpsi-cyan text-white py-2.5 rounded-lg font-bold text-sm hover:scale-105 transition shadow-md">VER PERFIL E AGENDAR VIA WHATSAPP</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <footer id="contato" class="bg-trinpsi-dark text-white py-16">
         <div class="container mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 items-center">
-            
             <div>
-                <ul class="space-y-4 text-white/90 font-medium">
-                    <li class="flex items-center space-x-2"> <span class="w-1.5 h-1.5 bg-trinpsi-cyan rounded-full"></span> <span>Privacidade Total</span> </li>
-                    <li class="flex items-center space-x-2"> <span class="w-1.5 h-1.5 bg-trinpsi-cyan rounded-full"></span> <span>Resultados Focados</span> </li>
-                    <li class="flex items-center space-x-2"> <span class="w-1.5 h-1.5 bg-trinpsi-cyan rounded-full"></span> <span>Custo Zero para o Colaborador</span> </li>
-                </ul>
-                <div class="mt-10 flex items-center">
-                    <div class="font-bold text-3xl bg-white text-trinpsi-dark px-3 py-1 rounded-sm flex items-center space-x-1">
-                        <span>TRINPSI</span>
-                    </div>
-                </div>
+                <img src="logo.jpg" alt="Trinpsi Logo" class="h-20 w-auto mb-8 grayscale invert brightness-200">
+                <p class="text-sm opacity-80 leading-relaxed max-w-sm italic">"O elo entre empresa, colaborador e psicólogo para uma vida corporativa mais equilibrada e produtiva."</p>
             </div>
-
-            <div class="space-y-8">
+            <div class="space-y-6">
                 <div>
-                    <h5 class="font-bold mb-3 uppercase tracking-wider text-sm">Contatos</h5>
-                    <p class="text-sm opacity-80">WhatsApp: <a href="https://wa.me/5514991667595" target="_blank" class="hover:text-trinpsi-cyan transition">(14) 99166-7595</a></p>
-                    <p class="text-sm opacity-80 mt-1">Siga-nos: <a href="https://www.instagram.com/trinpsicorp/" target="_blank" class="hover:text-trinpsi-cyan transition">@trinpsicorp (Instagram)</a></p>
+                    <h5 class="font-bold mb-1 uppercase tracking-wider text-xs text-trinpsi-cyan">Fale Comigo</h5>
+                    <p class="text-lg font-semibold">(14) 99166-7595</p>
+                    <p class="text-sm opacity-70">contato@trinpsi.com.br</p>
                 </div>
                 <div>
-                    <h5 class="font-bold mb-3 uppercase tracking-wider text-sm">Sobre nós</h5>
-                    <p class="text-sm opacity-80 leading-relaxed max-w-sm italic">"O elo entre empresa, colaborador e psicólogo para uma vida corporativa mais equilibrada e produtiva."</p>
+                    <h5 class="font-bold mb-1 uppercase tracking-wider text-xs text-trinpsi-cyan">Instagram</h5>
+                    <a href="https://www.instagram.com/trinpsicorp/" target="_blank" class="text-sm hover:underline">@trinpsicorp</a>
                 </div>
             </div>
         </div>
@@ -138,6 +115,5 @@
             © 2026 Trinpsi. Todos os direitos reservados. Idealizado por Bruna Cruz.
         </div>
     </footer>
-
 </body>
 </html>
